@@ -35,4 +35,48 @@ Android studio
 !["example"](/assets/create-project.png)
  3. Выбираем Android
  !["example"](/assets/choose-android.png)
- 4.
+
+## Подключение Андройд к файрбейс
+Получить ключ:
+```
+keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore -list -v -storepass android
+```
+Полученный файл закинуть в папку app, добавить google-services plugin
+```
+apply plugin: 'com.google.gms.google-services'
+```
+
+## Авторизация
+Database выбрать rules
+```
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+```
+В app/builg.gradle
+```
+compile 'com.google.firebase:firebase-auth:10.0.0'
+```
+
+## База данных
+В app/builg.gradle
+```
+compile 'com.google.firebase:firebase-database:10.0.0'
+```
+
+## Уведомления
+```
+compile 'com.google.firebase:firebase-messaging:10.0.0'
+
+```
+## Remote Config
+```
+compile 'com.google.firebase:firebase-config:10.0.0'
+```
+## Crash tracker
+```
+compile 'com.google.firebase:firebase-crash:10.0.0'
+```

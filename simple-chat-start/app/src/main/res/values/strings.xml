@@ -7,4 +7,5 @@
     <string name="sign_out">Sign Out</string>
     <string name="fresh_config">Update config</string>
     <string name="cause_crash">Cause crash</string>
+    <!--<string name="si"-->
 </resources>
