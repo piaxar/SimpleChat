@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">simple-chat</string>
+    <string name="send">SEND</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in_text">Sign In</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="fresh_config">Update config</string>
+    <string name="cause_crash">Cause crash</string>
+    <string name="sign_up">Sign Up</string>
+</resources>
